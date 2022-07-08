@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.mapper.MemberMapper">
+    
+    <!-- sql 작성 -->
+	<insert id="insertMember"
+		parameterType="com.smhrd.domain.Member">
+		insert into member values (#{id}, #{pw}, #{nick})
+	</insert>
+
+	<select id="selectMember"
+		parameterType="com.smhrd.domain.Member"
+		resultType="com.smhrd.domain.Member">
+		select * from member 
+		where id=#{id} and pw=#{pw}
+	</select>
+	
+	<select id="memberList" resultType="com.smhrd.domain.Member">
+		select * from member
+	</select>
+    
+</mapper>
