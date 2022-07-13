@@ -2,17 +2,17 @@ package com.smhrd.mapper;
 
 import java.util.List;
 
-import com.smhrd.domain.Member;
+import com.smhrd.domain.Members;
 
 public interface MemberMapper {
 
 	// 회원가입
-	public int insertMember(Member member);
+	public int insertMember(Members member);
 
 	// 로그인 기능
-	public Member selectMember(Member member);
+	public Members selectMember(Members member);
 	
 	// 조회 기능
-	public List<Member> memberList();
+	public List<Members> memberList();
 
 }

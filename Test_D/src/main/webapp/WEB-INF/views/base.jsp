@@ -80,11 +80,11 @@
 						<thead>
 							<tr>
 								<td>ID :</td>
-								<td><input type="text" name="id"></td>
+								<td><input type="text" name="member_id"></td>
 							</tr>
 							<tr>
 								<td>PW :</td>
-								<td><input type="password" name="pw"></td>
+								<td><input type="password" name="member_pw"></td>
 							</tr>
 
 
@@ -107,7 +107,7 @@
 
 			<c:if test="${!empty loginVO}">
 				<div>
-					<label for="">${loginVO.nick}님 환영합니다</label>
+					<label for="">${loginVO.member_name}님 환영합니다</label>
 					<button onclick="logout()">로그아웃</button>
 
 				</div>

@@ -30,8 +30,8 @@ $(document).ready(() => {
 			for (let i = 0; i < res.length; i++) {
 				tr = `
 		                  <tr>
-						   <td>`+ res[i].id + `</td>
-		                   <td>${res[i].nick}</td>		                 
+						   <td>`+ res[i].member_id + `</td>
+		                   <td>${res[i].member_name} ${res[i].member_dept} ${res[i].member_job}</td>		                 
 		                  </tr>                
 		                  `;
 

@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.smhrd.domain.Member;
+import com.smhrd.domain.Members;
 import com.smhrd.mapper.MemberMapper;
 
 @Service
@@ -16,22 +16,22 @@ public class MemberService {
 	MemberMapper mapper;
 
 	// 회원가입
-	public void insertMember(Member member) {
+	public void insertMember(Members member) {
 		mapper.insertMember(member);
 	}
 
 	// 로그인 기능
-	public Member selectMember(Member member) {
+	public Members selectMember(Members member) {
 
-		Member loginVO = mapper.selectMember(member);
+		Members loginVO = mapper.selectMember(member);
 
 		return loginVO;
 	}
 
 	// 조회 기능
-	public List<Member> memberList() {
+	public List<Members> memberList() {
 
-		List<Member> mlist = mapper.memberList();
+		List<Members> mlist = mapper.memberList();
 
 		return mlist;
 	}

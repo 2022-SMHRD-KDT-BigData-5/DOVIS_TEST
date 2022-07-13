@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.smhrd.domain.Member;
+import com.smhrd.domain.Members;
 import com.smhrd.mapper.MemberMapper;
 import com.smhrd.service.MemberService;
 
@@ -32,13 +32,13 @@ public class MemberRestController {
 //	}
 	
 	@RequestMapping("/memberList.do") 
-	public List<Member> memberList() {
+	public List<Members> memberList() {
 		// @ResponseBody 
 		// 이 데이터를 응답 해 주겠다
 		// 이때 페이지 이동 x
 		
 		// 글 데이터 가져오기
-		List<Member> mlist = service.memberList();
+		List<Members> mlist = service.memberList();
 		
 		// 리턴이 값을 돌려주는 게 아니라, forward 방식으로 이동
 		// ajax는 페이지 이동x

@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.smhrd.domain.Member;
+import com.smhrd.domain.Members;
 import com.smhrd.service.MemberService;
 
 @Controller
@@ -30,11 +30,11 @@ public class MemberController {
 
 	// 로그인 기능
 	@RequestMapping("/selectMember.do")
-	public String selectMember(Member member, HttpSession session) {
+	public String selectMember(Members member, HttpSession session) {
 
-		Member loginVO = service.selectMember(member);
+		Members loginVO = service.selectMember(member);
 
-		System.out.println(loginVO.getId());
+		System.out.println(loginVO.getMember_id());
 
 		// 회원 인증 여부를 체크
 		if (loginVO != null) { // 성공
