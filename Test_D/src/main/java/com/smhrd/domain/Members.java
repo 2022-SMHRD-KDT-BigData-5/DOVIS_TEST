@@ -24,7 +24,7 @@ public class Members {
 	
 	private String member_dept;
 	
-	private String member_job;
+	private String member_pos;
 
 
 }

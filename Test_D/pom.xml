@@ -129,16 +129,16 @@
 
 		<!-- mysql connector db 연결할 드라이브 역할 -->
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.28</version>
-		</dependency> -->
+		</dependency> 
 
 		<!-- 오라클 -->
 		<!--oracle -->
-		<dependency> <groupId>com.oracle.database.jdbc</groupId> <artifactId>ojdbc6</artifactId> 
-			<version>11.2.0.4</version> </dependency> 
+		<!-- <dependency> <groupId>com.oracle.database.jdbc</groupId> <artifactId>ojdbc6</artifactId> 
+			<version>11.2.0.4</version> </dependency>  -->
 
 		<!-- spring jdbc -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->		
@@ -179,7 +179,14 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.13.3</version>
 		</dependency>
-
+		
+		<!-- 웹소켓 -->
+		<!-- <dependency>
+	        <groupId>org.springframework</groupId>
+	        <artifactId>spring-websocket</artifactId>
+	        <version>4.3.22.RELEASE</version>
+        </dependency> -->
+	
 
 	</dependencies>
 

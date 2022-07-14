@@ -13,9 +13,9 @@
 	<!-- property가 필드와 동일 -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName"
-			value="oracle.jdbc.OracleDriver"></property>
+			value="com.mysql.jdbc.Driver"></property>
 		<property name="jdbcUrl"
-			value="jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe"></property>
+			value="jdbc:mysql://project-db-stu.ddns.net:3307/dovis"></property>
 		<property name="username" value="dovis"></property>
 		<property name="password" value="12345"></property>
 	</bean>

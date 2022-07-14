@@ -31,7 +31,7 @@ $(document).ready(() => {
 				tr = `
 		                  <tr>
 						   <td>`+ res[i].member_id + `</td>
-		                   <td>${res[i].member_no} ${res[i].member_name} ${res[i].member_dept} ${res[i].member_job}</td>		                 
+		                   <td>${res[i].member_no} ${res[i].member_name} ${res[i].member_dept} ${res[i].member_pos}</td>		                 
 		                  </tr>                
 		                  `;
 

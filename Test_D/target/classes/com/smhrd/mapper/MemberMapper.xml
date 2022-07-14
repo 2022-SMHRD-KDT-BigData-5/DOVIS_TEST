@@ -5,7 +5,8 @@
     <!-- sql 작성 -->
 	<insert id="insertMember"
 		parameterType="com.smhrd.domain.Members">
-		insert into members values (members_no_seq.nextval, #{member_id}, #{member_pw}, #{email}, #{member_name}, #{member_dept}, #{member_job})
+		insert into members (member_id, member_pw, email, member_name, member_dept, member_pos)
+		values (#{member_id}, #{member_pw}, #{email}, #{member_name}, #{member_dept}, #{member_pos})
 	</insert>
 
 	<select id="selectMember"
